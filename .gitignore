@@ -1,0 +1,65 @@
+# ===== Sistema Operacional =====
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ===== Editores e IDEs =====
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+# ===== Dependências =====
+node_modules/
+bower_components/
+
+# ===== Logs e temporários =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+tmp/
+temp/
+
+# ===== Variáveis de ambiente =====
+.env
+.env.local
+.env.*.local
+
+# ===== Build / Dist =====
+dist/
+build/
+out/
+
+# ===== Assets privados =====
+# Descomente se não quiser versionar sua foto
+# assets/perfil-will.png

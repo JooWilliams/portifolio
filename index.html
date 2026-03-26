@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Williams | Desenvolvedor Júnior</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>JW
+        <span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">Sobre mim</a></li>
+        <li><a href="#skills" class="nav__link">Habilidades</a></li>
+        <li><a href="#experience" class="nav__link">Experiência</a></li>
+        <li><a href="projects.html" class="nav__link nav__link--highlight" target="_blank">
+          <i class="fab fa-github"></i> Projetos
+        </a></li>
+        <li><a href="#contact" class="nav__link">Contato</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="container hero__container">
+      <div class="hero__text">
+        <p class="hero__greeting">Olá, eu sou</p>
+        <h1 class="hero__name">José Williams</h1>
+        <h2 class="hero__role">
+          <span class="hero__role-prefix">{"role"}: </span>
+          <span class="hero__role-typing" id="typingText"></span>
+          <span class="hero__cursor">|</span>
+        </h2>
+        <p class="hero__description">
+          Formado em ADS pela faculdade de tecnologia e inovação SENAC-DF • Desenvolvedor Júnior em formação full-stack
+          apaixonado por Java, Python e novas tecnologias.
+        </p>
+      </div>
+
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-ring">
+          <div class="hero__photo" id="photoSlot">
+            <span class="hero__photo-placeholder">
+              <i class="fas fa-user"></i>
+              <img src="assets/perfil-will.png" alt="José Williams" />
+            </span>
+          </div>
+        </div>
+        <div class="hero__photo-badge badge--java">Java</div>
+        <div class="hero__photo-badge badge--python">Python</div>
+        <div class="hero__photo-badge badge--html">HTML/CSS</div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-hint">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ========== SOBRE MIM ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre_mim</span>
+        <h2 class="section-title">Minha Trajetória</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__card">
+          <div class="about__icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Formação</h3>
+          <p>
+            Formado em <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong>
+            pela <strong>Faculdade SENAC-DF</strong> (2023 – 2025). Durante o curso aprofundei
+            conceitos de POO, desenvolvimento web, mobile, metodologias ágeis e qualidade
+            de software.
+          </p>
+        </div>
+
+        <div class="about__card">
+          <div class="about__icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Experiência Atual</h3>
+          <p>
+            Atuo como <strong>Desenvolvedor Júnior II</strong> no
+            <strong>Espaço Lavorato Psicologia</strong>, onde desenvolvo automações em
+            Python, prototipo interfaces, utilizo Git, e ofereço suporte técnico N2 —
+            unindo desenvolvimento e TI no dia a dia corporativo.
+          </p>
+        </div>
+
+        <div class="about__card">
+          <div class="about__icon"><i class="fas fa-rocket"></i></div>
+          <h3>Objetivo</h3>
+          <p>
+            Busco me tornar <strong>desenvolvedor full-stack</strong>, aplicando meu
+            conhecimento em Java e Python para construir soluções eficientes. Sou curioso,
+            comunicativo, apaixonado por música e movido pela vontade de aprender e
+            evoluir em equipe.
+          </p>
+        </div>
+      </div>
+
+      <blockquote class="about__quote">
+        "Possuo facilidade em comunicação, agilidade na resolução de incidentes e
+        experiência prática em ambientes corporativos. Busco aplicar minha vivência
+        técnica para apoiar processos de forma eficiente e colaborativa."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========== HABILIDADES ========== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// habilidades</span>
+        <h2 class="section-title">Stack & Ferramentas</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-pill"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="skill-pill"><i class="fas fa-database"></i> MySQL</div>
+        <div class="skill-pill"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill-pill"><i class="fas fa-leaf"></i> Spring Boot</div>
+        <div class="skill-pill"><i class="fas fa-file-excel"></i> Excel Avançado</div>
+        <div class="skill-pill"><i class="fas fa-cogs"></i> Scrum</div>
+        <div class="skill-pill"><i class="fab fa-php"></i> PHP</div>
+      </div>
+
+      <div class="certs">
+        <h3 class="certs__title">Certificações</h3>
+        <div class="certs__list">
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Oracle Next Education (ONE)</strong>
+              <span>Oracle + Alura — Em andamento</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Scrum Foundation Professional (SFPC)</strong>
+              <span>CertiProf / Instituto Oriens</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Python para Machine Learning e Ciência de Dados</strong>
+              <span>Didática Tech</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Capacitação em Liderança</strong>
+              <span>Agência Pró-Emprego</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIÊNCIA ========== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// experiência</span>
+        <h2 class="section-title">Onde Trabalhei</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <h3>Desenvolvedor Júnior II <span>+ Suporte TI N2</span></h3>
+              <span class="timeline__company">Espaço Lavorato Psicologia LTDA</span>
+              <span class="timeline__period"><i class="fas fa-calendar-alt"></i> Atual</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Desenvolvimento de automações em Python para processos internos</li>
+              <li>Geração automática de documentos Word e PDF</li>
+              <li>Prototipação de telas e fluxos (UX básico)</li>
+              <li>Organização e tratamento de relatórios Excel</li>
+              <li>Suporte técnico N2 a usuários, notebooks, desktops e impressoras</li>
+              <li>Uso de Git para versionamento de projetos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <h3>Estagiário de TI e Desenvolvimento</h3>
+              <span class="timeline__company">Espaço Lavorato Psicologia LTDA</span>
+              <span class="timeline__period"><i class="fas fa-calendar-alt"></i> ago/2024 – jul/2025</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Suporte de TI N1 e N2</li>
+              <li>Migração e implantação de sistema de gestão interno</li>
+              <li>Treinamento de usuários durante a mudança de sistema</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--contact-tag);">// contato</span>
+        <h2 class="section-title">Vamos conversar?</h2>
+        <p class="contact__subtitle">
+          Estou aberto a oportunidades, freelas e parcerias. Me manda uma mensagem!
+        </p>
+      </div>
+
+      <div class="contact__grid">
+        <a href="mailto:williamslicar984@gmail.com" class="contact__card">
+          <div class="contact__icon"><i class="fas fa-envelope"></i></div>
+          <h4>E-mail</h4>
+          <span>williamslicar984@gmail.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jos%C3%A9-williams-b89523248/" target="_blank" class="contact__card">
+          <div class="contact__icon"><i class="fab fa-linkedin"></i></div>
+          <h4>LinkedIn</h4>
+          <span>José Williams</span>
+        </a>
+
+        <a href="https://github.com/JooWilliams" target="_blank" class="contact__card">
+          <div class="contact__icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub</h4>
+          <span>JooWilliams</span>
+        </a>
+
+        <div class="contact__card contact__card--location">
+          <div class="contact__icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Localização</h4>
+          <span>Brasília – DF, Brasil</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Feito com <i class="fas fa-heart"></i> por <strong>José Williams</strong> •
+        <span id="year"></span>
+      </p>
+      <p class="footer__stack">HTML • CSS • JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

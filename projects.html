@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos | José Williams</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="projects-page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>JW
+        <span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <div class="proj-nav-right">
+        <a href="index.html" class="btn btn--outline btn--sm">
+          <i class="fas fa-arrow-left"></i> Voltar ao portfólio
+        </a>
+        <a href="https://github.com/Joswill1" target="_blank" class="btn btn--primary btn--sm">
+          <i class="fab fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO PROJECTS ===== -->
+  <section class="proj-hero">
+    <div class="proj-hero__bg"></div>
+    <div class="container proj-hero__content">
+      <span class="proj-hero__tag">// meus_projetos</span>
+      <h1 class="proj-hero__title">O que eu <span>construí</span></h1>
+      <p class="proj-hero__sub">
+        Projetos acadêmicos, automações e experimentos que fazem parte da minha jornada como dev.
+      </p>
+
+      <!-- Filter pills -->
+      <div class="proj-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARDS GRID ===== -->
+  <main class="proj-main container">
+    <div class="cards-grid" id="cardsGrid">
+
+      <!-- Card 1: Kevigo -->
+      <article class="proj-card" data-tags="web php">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#7c6bff,#b44fff);">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--php">PHP</span>
+            <span class="badge badge--web">Web</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Kevigo</h2>
+        <p class="proj-card__desc">
+          Plataforma para dar visibilidade a profissionais de tecnologia.
+          Espaço digital onde devs podem expor habilidades e conquistas.
+          Desenvolvido em <strong>PHP</strong>.
+        </p>
+        <div class="proj-card__tech">
+          <span>PHP</span><span>HTML</span><span>CSS</span><span>MySQL</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Acadêmico</span>
+        </div>
+      </article>
+
+      <!-- Card 2: CookNary -->
+      <article class="proj-card" data-tags="java">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#f89820,#ff6b35);">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--java">Java</span>
+            <span class="badge badge--spring">Spring Boot</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">CookNary</h2>
+        <p class="proj-card__desc">
+          Sistema de gerenciamento e criação de receitas desenvolvido em
+          <strong>Java + Spring Boot</strong>. Responsável pelos testes
+          automatizados utilizando mocks.
+        </p>
+        <div class="proj-card__tech">
+          <span>Java</span><span>Spring Boot</span><span>JUnit</span><span>Mockito</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Acadêmico</span>
+        </div>
+      </article>
+
+      <!-- Card 3: Automações Python -->
+      <article class="proj-card" data-tags="python">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#3670a0,#4ec94e);">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--python">Python</span>
+            <span class="badge badge--auto">Automação</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Automações Clínica</h2>
+        <p class="proj-card__desc">
+          Scripts em <strong>Python</strong> para automação de processos internos:
+          geração de documentos Word/PDF, mala direta, organização de relatórios
+          e pré-faturamento de guias médicas.
+        </p>
+        <div class="proj-card__tech">
+          <span>Python</span><span>docx</span><span>pandas</span><span>openpyxl</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Profissional</span>
+        </div>
+      </article>
+
+      <!-- Card 4: Portfolio -->
+      <article class="proj-card" data-tags="web">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#00e5ff,#7c6bff);">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--web">Web</span>
+            <span class="badge badge--html">HTML/CSS</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Portfólio Pessoal</h2>
+        <p class="proj-card__desc">
+          Este portfólio! Desenvolvido com <strong>HTML, CSS e JavaScript</strong>
+          puro. Design responsivo, animações, efeito de digitação e tema dark.
+        </p>
+        <div class="proj-card__tech">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Pessoal</span>
+        </div>
+      </article>
+
+      <!-- Card 5: ML / Ciência de Dados -->
+      <article class="proj-card" data-tags="python">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#ff6b9d,#c44dff);">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--python">Python</span>
+            <span class="badge badge--ml">Machine Learning</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Estudos em ML</h2>
+        <p class="proj-card__desc">
+          Notebooks e experimentos em <strong>Machine Learning e Ciência de Dados</strong>
+          como parte do curso Didática Tech. Análise de dados, visualizações e modelos básicos.
+        </p>
+        <div class="proj-card__tech">
+          <span>Python</span><span>scikit-learn</span><span>pandas</span><span>matplotlib</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Estudo</span>
+        </div>
+      </article>
+
+      <!-- Card 7: Save the Date -->
+      <article class="proj-card" data-tags="java web">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#e74c3c,#f89820);">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--java">Java</span>
+            <span class="badge badge--oracle">Oracle ONE</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Projetos ONE – Oracle</h2>
+        <p class="proj-card__desc">
+          Desafios e projetos desenvolvidos durante o programa
+          <strong>Oracle Next Education</strong> em parceria com a Alura.
+          Foco em Java back-end e boas práticas.
+        </p>
+        <div class="proj-card__tech">
+          <span>Java</span><span>Spring</span><span>MySQL</span><span>Git</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Formação</span>
+        </div>
+      </article>
+
+      <!-- Card 6: ONE Oracle -->
+      <article class="proj-card" data-tags="java script">
+        <div class="proj-card__top">
+          <div class="proj-card__icon" style="background: linear-gradient(135deg,#e62384,#fa49fa);">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="proj-card__badges">
+            <span class="badge badge--java">Java Script</span>
+            <span class="badge badge--vercel">Vercel</span>
+            <span class="badge badge--railway">Railway</span>
+            <span class="badge badge--supabase">Supabase</span>
+          </div>
+        </div>
+        <h2 class="proj-card__title">Save The Date</h2>
+        <p class="proj-card__desc">
+          Desafios e projetos desenvolvidos durante o programa
+          <strong>Oracle Next Education</strong> em parceria com a Alura.
+          Foco em Java back-end e boas práticas.
+        </p>
+        <div class="proj-card__tech">
+          <span>Java</span><span>Spring</span><span>MySQL</span><span>Git</span>
+        </div>
+        <div class="proj-card__footer">
+          <a href="https://github.com/Joswill1" target="_blank" class="proj-card__link">
+            <i class="fab fa-github"></i> Ver repositório
+          </a>
+          <span class="proj-card__type">Formação</span>
+        </div>
+      </article>
+
+    </div><!-- /cards-grid -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer proj-footer">
+    <div class="container">
+      <p>
+        <a href="https://github.com/Joswill1" target="_blank" class="footer-gh">
+          <i class="fab fa-github"></i> github.com/JooWilliams
+        </a>
+      </p>
+      <p class="footer__stack">Feito com <i class="fas fa-heart"></i> por José Williams</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+</body>
+</html>
