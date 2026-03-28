@@ -177,7 +177,10 @@
 .badge--html   { background: #fff0ed; color: #b83110; border-color: #fca58e; }
 .badge--ml     { background: #f5e8ff; color: #8b1fc7; border-color: #d8a8f7; }
 .badge--oracle { background: #ffeaea; color: #b41a1a; border-color: #fca5a5; }
-.badge--vercel { background: #f2fff6; color: #246504; border-color: #86d45c;} 
+.badge--vercel { background: #f2fff6; color: #246504; border-color: #86d45c;}
+.badge--railway { background: #eeeeee; color: #b0b0b0; border-color: #9b9b9b;}
+.badge--supabase { background: #f2fff6; color: #399909; border-color: #97ec69;}
+
 
 /* ===== CARD CONTENT ===== */
 .proj-card__title {
@@ -246,7 +249,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--accent-2);
+  color: #404040;
   font-size: 0.95rem;
   font-weight: 600;
   transition: var(--transition);
